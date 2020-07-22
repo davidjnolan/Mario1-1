@@ -19,6 +19,26 @@ class AUnrealProjectCharacter : public ACharacter
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
 	class USpringArmComponent* CameraBoom;
 
+
+private:
+	FVector CameraPosition;
+	float CameraMinY;
+
+	UPROPERTY(EditAnywhere)
+	float CameraStartY = 10900.f;
+
+	UPROPERTY(EditAnywhere)
+	float CameraX = 0.f;
+
+	UPROPERTY(EditAnywhere)
+	float CameraZ = 0.f;
+
+
+
+
+
+
+
 protected:
 
 	/** Called for side to side input */

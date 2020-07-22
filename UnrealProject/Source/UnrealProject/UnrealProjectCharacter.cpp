@@ -4,8 +4,10 @@
 #include "Camera/CameraComponent.h"
 #include "Components/CapsuleComponent.h"
 #include "Components/InputComponent.h"
+
 #include "GameFramework/SpringArmComponent.h"
 #include "GameFramework/CharacterMovementComponent.h"
+
 
 AUnrealProjectCharacter::AUnrealProjectCharacter()
 {
@@ -41,6 +43,12 @@ AUnrealProjectCharacter::AUnrealProjectCharacter()
 	GetCharacterMovement()->MaxWalkSpeed = 600.f;
 	GetCharacterMovement()->MaxFlySpeed = 600.f;
 
+
+	CameraMinY = CameraStartY;
+	CameraPosition.X = CameraX;
+	CameraPosition.Y = CameraMinY;
+	CameraPosition.Z = CameraZ;
+
 	// Note: The skeletal mesh and anim blueprint references on the Mesh component (inherited from Character) 
 	// are set in the derived blueprint asset named MyCharacter (to avoid direct content references in C++)
 }
@@ -63,6 +71,13 @@ void AUnrealProjectCharacter::MoveRight(float Value)
 {
 	// add movement in that direction
 	AddMovementInput(FVector(0.f,-1.f,0.f), Value);
+
+	if (GetActorLocation().Y < CameraMinY)
+	{
+		CameraMinY = GetActorLocation().Y;
+	}
+	CameraPosition.Y = CameraMinY;
+	CameraBoom->SetWorldLocation(CameraPosition);
 }
 
 void AUnrealProjectCharacter::TouchStarted(const ETouchIndex::Type FingerIndex, const FVector Location)
