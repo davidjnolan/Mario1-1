@@ -1,0 +1,7 @@
+{
+	"files.exclude": {
+		"D:/Unreal/Mario1-1/UnrealProject/.vscode": true,
+		"D:/Unreal/Mario1-1/UnrealProject/Content": true,
+		"D:/Unreal/Mario1-1/UnrealProject/Intermediate": true
+	}
+}

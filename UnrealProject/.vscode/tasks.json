@@ -1,0 +1,1247 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "UnrealProject Win32 Debug Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"UnrealProject",
+				"Win32",
+				"Debug",
+				"D:\\Unreal\\Mario1-1\\UnrealProject\\UnrealProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_4.25"
+			}
+		},
+		{
+			"label": "UnrealProject Win32 Debug Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"UnrealProject",
+				"Win32",
+				"Debug",
+				"D:\\Unreal\\Mario1-1\\UnrealProject\\UnrealProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"UnrealProject Win32 Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_4.25"
+			}
+		},
+		{
+			"label": "UnrealProject Win32 Debug Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"UnrealProject",
+				"Win32",
+				"Debug",
+				"D:\\Unreal\\Mario1-1\\UnrealProject\\UnrealProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_4.25"
+			}
+		},
+		{
+			"label": "UnrealProject Win32 DebugGame Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"UnrealProject",
+				"Win32",
+				"DebugGame",
+				"D:\\Unreal\\Mario1-1\\UnrealProject\\UnrealProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_4.25"
+			}
+		},
+		{
+			"label": "UnrealProject Win32 DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"UnrealProject",
+				"Win32",
+				"DebugGame",
+				"D:\\Unreal\\Mario1-1\\UnrealProject\\UnrealProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"UnrealProject Win32 DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_4.25"
+			}
+		},
+		{
+			"label": "UnrealProject Win32 DebugGame Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"UnrealProject",
+				"Win32",
+				"DebugGame",
+				"D:\\Unreal\\Mario1-1\\UnrealProject\\UnrealProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_4.25"
+			}
+		},
+		{
+			"label": "UnrealProject Win32 Development Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"UnrealProject",
+				"Win32",
+				"Development",
+				"D:\\Unreal\\Mario1-1\\UnrealProject\\UnrealProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_4.25"
+			}
+		},
+		{
+			"label": "UnrealProject Win32 Development Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"UnrealProject",
+				"Win32",
+				"Development",
+				"D:\\Unreal\\Mario1-1\\UnrealProject\\UnrealProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"UnrealProject Win32 Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_4.25"
+			}
+		},
+		{
+			"label": "UnrealProject Win32 Development Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"UnrealProject",
+				"Win32",
+				"Development",
+				"D:\\Unreal\\Mario1-1\\UnrealProject\\UnrealProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_4.25"
+			}
+		},
+		{
+			"label": "UnrealProject Win32 Shipping Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"UnrealProject",
+				"Win32",
+				"Shipping",
+				"D:\\Unreal\\Mario1-1\\UnrealProject\\UnrealProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_4.25"
+			}
+		},
+		{
+			"label": "UnrealProject Win32 Shipping Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"UnrealProject",
+				"Win32",
+				"Shipping",
+				"D:\\Unreal\\Mario1-1\\UnrealProject\\UnrealProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"UnrealProject Win32 Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_4.25"
+			}
+		},
+		{
+			"label": "UnrealProject Win32 Shipping Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"UnrealProject",
+				"Win32",
+				"Shipping",
+				"D:\\Unreal\\Mario1-1\\UnrealProject\\UnrealProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_4.25"
+			}
+		},
+		{
+			"label": "UnrealProject Win32 Test Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"UnrealProject",
+				"Win32",
+				"Test",
+				"D:\\Unreal\\Mario1-1\\UnrealProject\\UnrealProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_4.25"
+			}
+		},
+		{
+			"label": "UnrealProject Win32 Test Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"UnrealProject",
+				"Win32",
+				"Test",
+				"D:\\Unreal\\Mario1-1\\UnrealProject\\UnrealProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"UnrealProject Win32 Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_4.25"
+			}
+		},
+		{
+			"label": "UnrealProject Win32 Test Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"UnrealProject",
+				"Win32",
+				"Test",
+				"D:\\Unreal\\Mario1-1\\UnrealProject\\UnrealProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_4.25"
+			}
+		},
+		{
+			"label": "UnrealProject Win64 Debug Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"UnrealProject",
+				"Win64",
+				"Debug",
+				"D:\\Unreal\\Mario1-1\\UnrealProject\\UnrealProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_4.25"
+			}
+		},
+		{
+			"label": "UnrealProject Win64 Debug Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"UnrealProject",
+				"Win64",
+				"Debug",
+				"D:\\Unreal\\Mario1-1\\UnrealProject\\UnrealProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"UnrealProject Win64 Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_4.25"
+			}
+		},
+		{
+			"label": "UnrealProject Win64 Debug Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"UnrealProject",
+				"Win64",
+				"Debug",
+				"D:\\Unreal\\Mario1-1\\UnrealProject\\UnrealProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_4.25"
+			}
+		},
+		{
+			"label": "UnrealProject Win64 DebugGame Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"UnrealProject",
+				"Win64",
+				"DebugGame",
+				"D:\\Unreal\\Mario1-1\\UnrealProject\\UnrealProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_4.25"
+			}
+		},
+		{
+			"label": "UnrealProject Win64 DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"UnrealProject",
+				"Win64",
+				"DebugGame",
+				"D:\\Unreal\\Mario1-1\\UnrealProject\\UnrealProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"UnrealProject Win64 DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_4.25"
+			}
+		},
+		{
+			"label": "UnrealProject Win64 DebugGame Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"UnrealProject",
+				"Win64",
+				"DebugGame",
+				"D:\\Unreal\\Mario1-1\\UnrealProject\\UnrealProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_4.25"
+			}
+		},
+		{
+			"label": "UnrealProject Win64 Development Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"UnrealProject",
+				"Win64",
+				"Development",
+				"D:\\Unreal\\Mario1-1\\UnrealProject\\UnrealProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_4.25"
+			}
+		},
+		{
+			"label": "UnrealProject Win64 Development Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"UnrealProject",
+				"Win64",
+				"Development",
+				"D:\\Unreal\\Mario1-1\\UnrealProject\\UnrealProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"UnrealProject Win64 Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_4.25"
+			}
+		},
+		{
+			"label": "UnrealProject Win64 Development Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"UnrealProject",
+				"Win64",
+				"Development",
+				"D:\\Unreal\\Mario1-1\\UnrealProject\\UnrealProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_4.25"
+			}
+		},
+		{
+			"label": "UnrealProject Win64 Shipping Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"UnrealProject",
+				"Win64",
+				"Shipping",
+				"D:\\Unreal\\Mario1-1\\UnrealProject\\UnrealProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_4.25"
+			}
+		},
+		{
+			"label": "UnrealProject Win64 Shipping Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"UnrealProject",
+				"Win64",
+				"Shipping",
+				"D:\\Unreal\\Mario1-1\\UnrealProject\\UnrealProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"UnrealProject Win64 Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_4.25"
+			}
+		},
+		{
+			"label": "UnrealProject Win64 Shipping Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"UnrealProject",
+				"Win64",
+				"Shipping",
+				"D:\\Unreal\\Mario1-1\\UnrealProject\\UnrealProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_4.25"
+			}
+		},
+		{
+			"label": "UnrealProject Win64 Test Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"UnrealProject",
+				"Win64",
+				"Test",
+				"D:\\Unreal\\Mario1-1\\UnrealProject\\UnrealProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_4.25"
+			}
+		},
+		{
+			"label": "UnrealProject Win64 Test Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"UnrealProject",
+				"Win64",
+				"Test",
+				"D:\\Unreal\\Mario1-1\\UnrealProject\\UnrealProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"UnrealProject Win64 Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_4.25"
+			}
+		},
+		{
+			"label": "UnrealProject Win64 Test Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"UnrealProject",
+				"Win64",
+				"Test",
+				"D:\\Unreal\\Mario1-1\\UnrealProject\\UnrealProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_4.25"
+			}
+		},
+		{
+			"label": "UnrealProject IOS Debug Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"UnrealProject",
+				"IOS",
+				"Debug",
+				"D:\\Unreal\\Mario1-1\\UnrealProject\\UnrealProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_4.25"
+			}
+		},
+		{
+			"label": "UnrealProject IOS Debug Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"UnrealProject",
+				"IOS",
+				"Debug",
+				"D:\\Unreal\\Mario1-1\\UnrealProject\\UnrealProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"UnrealProject IOS Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_4.25"
+			}
+		},
+		{
+			"label": "UnrealProject IOS Debug Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"UnrealProject",
+				"IOS",
+				"Debug",
+				"D:\\Unreal\\Mario1-1\\UnrealProject\\UnrealProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_4.25"
+			}
+		},
+		{
+			"label": "UnrealProject IOS DebugGame Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"UnrealProject",
+				"IOS",
+				"DebugGame",
+				"D:\\Unreal\\Mario1-1\\UnrealProject\\UnrealProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_4.25"
+			}
+		},
+		{
+			"label": "UnrealProject IOS DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"UnrealProject",
+				"IOS",
+				"DebugGame",
+				"D:\\Unreal\\Mario1-1\\UnrealProject\\UnrealProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"UnrealProject IOS DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_4.25"
+			}
+		},
+		{
+			"label": "UnrealProject IOS DebugGame Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"UnrealProject",
+				"IOS",
+				"DebugGame",
+				"D:\\Unreal\\Mario1-1\\UnrealProject\\UnrealProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_4.25"
+			}
+		},
+		{
+			"label": "UnrealProject IOS Development Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"UnrealProject",
+				"IOS",
+				"Development",
+				"D:\\Unreal\\Mario1-1\\UnrealProject\\UnrealProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_4.25"
+			}
+		},
+		{
+			"label": "UnrealProject IOS Development Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"UnrealProject",
+				"IOS",
+				"Development",
+				"D:\\Unreal\\Mario1-1\\UnrealProject\\UnrealProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"UnrealProject IOS Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_4.25"
+			}
+		},
+		{
+			"label": "UnrealProject IOS Development Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"UnrealProject",
+				"IOS",
+				"Development",
+				"D:\\Unreal\\Mario1-1\\UnrealProject\\UnrealProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_4.25"
+			}
+		},
+		{
+			"label": "UnrealProject IOS Shipping Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"UnrealProject",
+				"IOS",
+				"Shipping",
+				"D:\\Unreal\\Mario1-1\\UnrealProject\\UnrealProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_4.25"
+			}
+		},
+		{
+			"label": "UnrealProject IOS Shipping Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"UnrealProject",
+				"IOS",
+				"Shipping",
+				"D:\\Unreal\\Mario1-1\\UnrealProject\\UnrealProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"UnrealProject IOS Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_4.25"
+			}
+		},
+		{
+			"label": "UnrealProject IOS Shipping Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"UnrealProject",
+				"IOS",
+				"Shipping",
+				"D:\\Unreal\\Mario1-1\\UnrealProject\\UnrealProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_4.25"
+			}
+		},
+		{
+			"label": "UnrealProject IOS Test Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"UnrealProject",
+				"IOS",
+				"Test",
+				"D:\\Unreal\\Mario1-1\\UnrealProject\\UnrealProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_4.25"
+			}
+		},
+		{
+			"label": "UnrealProject IOS Test Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"UnrealProject",
+				"IOS",
+				"Test",
+				"D:\\Unreal\\Mario1-1\\UnrealProject\\UnrealProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"UnrealProject IOS Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_4.25"
+			}
+		},
+		{
+			"label": "UnrealProject IOS Test Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"UnrealProject",
+				"IOS",
+				"Test",
+				"D:\\Unreal\\Mario1-1\\UnrealProject\\UnrealProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_4.25"
+			}
+		},
+		{
+			"label": "UnrealProject Android Debug Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"UnrealProject",
+				"Android",
+				"Debug",
+				"D:\\Unreal\\Mario1-1\\UnrealProject\\UnrealProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_4.25"
+			}
+		},
+		{
+			"label": "UnrealProject Android Debug Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"UnrealProject",
+				"Android",
+				"Debug",
+				"D:\\Unreal\\Mario1-1\\UnrealProject\\UnrealProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"UnrealProject Android Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_4.25"
+			}
+		},
+		{
+			"label": "UnrealProject Android Debug Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"UnrealProject",
+				"Android",
+				"Debug",
+				"D:\\Unreal\\Mario1-1\\UnrealProject\\UnrealProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_4.25"
+			}
+		},
+		{
+			"label": "UnrealProject Android DebugGame Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"UnrealProject",
+				"Android",
+				"DebugGame",
+				"D:\\Unreal\\Mario1-1\\UnrealProject\\UnrealProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_4.25"
+			}
+		},
+		{
+			"label": "UnrealProject Android DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"UnrealProject",
+				"Android",
+				"DebugGame",
+				"D:\\Unreal\\Mario1-1\\UnrealProject\\UnrealProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"UnrealProject Android DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_4.25"
+			}
+		},
+		{
+			"label": "UnrealProject Android DebugGame Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"UnrealProject",
+				"Android",
+				"DebugGame",
+				"D:\\Unreal\\Mario1-1\\UnrealProject\\UnrealProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_4.25"
+			}
+		},
+		{
+			"label": "UnrealProject Android Development Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"UnrealProject",
+				"Android",
+				"Development",
+				"D:\\Unreal\\Mario1-1\\UnrealProject\\UnrealProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_4.25"
+			}
+		},
+		{
+			"label": "UnrealProject Android Development Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"UnrealProject",
+				"Android",
+				"Development",
+				"D:\\Unreal\\Mario1-1\\UnrealProject\\UnrealProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"UnrealProject Android Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_4.25"
+			}
+		},
+		{
+			"label": "UnrealProject Android Development Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"UnrealProject",
+				"Android",
+				"Development",
+				"D:\\Unreal\\Mario1-1\\UnrealProject\\UnrealProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_4.25"
+			}
+		},
+		{
+			"label": "UnrealProject Android Shipping Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"UnrealProject",
+				"Android",
+				"Shipping",
+				"D:\\Unreal\\Mario1-1\\UnrealProject\\UnrealProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_4.25"
+			}
+		},
+		{
+			"label": "UnrealProject Android Shipping Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"UnrealProject",
+				"Android",
+				"Shipping",
+				"D:\\Unreal\\Mario1-1\\UnrealProject\\UnrealProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"UnrealProject Android Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_4.25"
+			}
+		},
+		{
+			"label": "UnrealProject Android Shipping Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"UnrealProject",
+				"Android",
+				"Shipping",
+				"D:\\Unreal\\Mario1-1\\UnrealProject\\UnrealProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_4.25"
+			}
+		},
+		{
+			"label": "UnrealProject Android Test Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"UnrealProject",
+				"Android",
+				"Test",
+				"D:\\Unreal\\Mario1-1\\UnrealProject\\UnrealProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_4.25"
+			}
+		},
+		{
+			"label": "UnrealProject Android Test Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"UnrealProject",
+				"Android",
+				"Test",
+				"D:\\Unreal\\Mario1-1\\UnrealProject\\UnrealProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"UnrealProject Android Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_4.25"
+			}
+		},
+		{
+			"label": "UnrealProject Android Test Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"UnrealProject",
+				"Android",
+				"Test",
+				"D:\\Unreal\\Mario1-1\\UnrealProject\\UnrealProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_4.25"
+			}
+		},
+		{
+			"label": "UnrealProjectEditor Win64 Debug Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"UnrealProjectEditor",
+				"Win64",
+				"Debug",
+				"D:\\Unreal\\Mario1-1\\UnrealProject\\UnrealProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_4.25"
+			}
+		},
+		{
+			"label": "UnrealProjectEditor Win64 Debug Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"UnrealProjectEditor",
+				"Win64",
+				"Debug",
+				"D:\\Unreal\\Mario1-1\\UnrealProject\\UnrealProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"UnrealProjectEditor Win64 Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_4.25"
+			}
+		},
+		{
+			"label": "UnrealProjectEditor Win64 Debug Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"UnrealProjectEditor",
+				"Win64",
+				"Debug",
+				"D:\\Unreal\\Mario1-1\\UnrealProject\\UnrealProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_4.25"
+			}
+		},
+		{
+			"label": "UnrealProjectEditor Win64 DebugGame Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"UnrealProjectEditor",
+				"Win64",
+				"DebugGame",
+				"D:\\Unreal\\Mario1-1\\UnrealProject\\UnrealProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_4.25"
+			}
+		},
+		{
+			"label": "UnrealProjectEditor Win64 DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"UnrealProjectEditor",
+				"Win64",
+				"DebugGame",
+				"D:\\Unreal\\Mario1-1\\UnrealProject\\UnrealProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"UnrealProjectEditor Win64 DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_4.25"
+			}
+		},
+		{
+			"label": "UnrealProjectEditor Win64 DebugGame Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"UnrealProjectEditor",
+				"Win64",
+				"DebugGame",
+				"D:\\Unreal\\Mario1-1\\UnrealProject\\UnrealProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_4.25"
+			}
+		},
+		{
+			"label": "UnrealProjectEditor Win64 Development Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"UnrealProjectEditor",
+				"Win64",
+				"Development",
+				"D:\\Unreal\\Mario1-1\\UnrealProject\\UnrealProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_4.25"
+			}
+		},
+		{
+			"label": "UnrealProjectEditor Win64 Development Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"UnrealProjectEditor",
+				"Win64",
+				"Development",
+				"D:\\Unreal\\Mario1-1\\UnrealProject\\UnrealProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"UnrealProjectEditor Win64 Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_4.25"
+			}
+		},
+		{
+			"label": "UnrealProjectEditor Win64 Development Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"UnrealProjectEditor",
+				"Win64",
+				"Development",
+				"D:\\Unreal\\Mario1-1\\UnrealProject\\UnrealProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\EpicGames\\UE_4.25"
+			}
+		}
+	]
+}

@@ -1,0 +1,128 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "UnrealProject (Debug)",
+			"request": "launch",
+			"preLaunchTask": "UnrealProject Win64 Debug Build",
+			"program": "D:\\Unreal\\Mario1-1\\UnrealProject\\Binaries\\Win64\\UE4-Win64-Debug.exe",
+			"args": [
+			],
+			"cwd": "D:\\EpicGames\\UE_4.25",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "D:\\EpicGames\\UE_4.25\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "UnrealProject (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "UnrealProject Win64 DebugGame Build",
+			"program": "D:\\Unreal\\Mario1-1\\UnrealProject\\Binaries\\Win64\\UE4-Win64-DebugGame.exe",
+			"args": [
+			],
+			"cwd": "D:\\EpicGames\\UE_4.25",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "D:\\EpicGames\\UE_4.25\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "UnrealProject (Development)",
+			"request": "launch",
+			"preLaunchTask": "UnrealProject Win64 Development Build",
+			"program": "D:\\Unreal\\Mario1-1\\UnrealProject\\Binaries\\Win64\\UE4.exe",
+			"args": [
+			],
+			"cwd": "D:\\EpicGames\\UE_4.25",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "D:\\EpicGames\\UE_4.25\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "UnrealProject (Shipping)",
+			"request": "launch",
+			"preLaunchTask": "UnrealProject Win64 Shipping Build",
+			"program": "D:\\Unreal\\Mario1-1\\UnrealProject\\Binaries\\Win64\\UE4-Win64-Shipping.exe",
+			"args": [
+			],
+			"cwd": "D:\\EpicGames\\UE_4.25",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "D:\\EpicGames\\UE_4.25\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "UnrealProject (Test)",
+			"request": "launch",
+			"preLaunchTask": "UnrealProject Win64 Test Build",
+			"program": "D:\\Unreal\\Mario1-1\\UnrealProject\\Binaries\\Win64\\UE4-Win64-Test.exe",
+			"args": [
+			],
+			"cwd": "D:\\EpicGames\\UE_4.25",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "D:\\EpicGames\\UE_4.25\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "UnrealProjectEditor (Debug)",
+			"request": "launch",
+			"preLaunchTask": "UnrealProjectEditor Win64 Debug Build",
+			"program": "D:\\EpicGames\\UE_4.25\\Engine\\Binaries\\Win64\\UE4Editor-Win64-Debug.exe",
+			"args": [
+				"D:\\Unreal\\Mario1-1\\UnrealProject\\UnrealProject.uproject"
+			],
+			"cwd": "D:\\EpicGames\\UE_4.25",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "D:\\EpicGames\\UE_4.25\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "UnrealProjectEditor (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "UnrealProjectEditor Win64 DebugGame Build",
+			"program": "D:\\EpicGames\\UE_4.25\\Engine\\Binaries\\Win64\\UE4Editor-Win64-DebugGame.exe",
+			"args": [
+				"D:\\Unreal\\Mario1-1\\UnrealProject\\UnrealProject.uproject"
+			],
+			"cwd": "D:\\EpicGames\\UE_4.25",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "D:\\EpicGames\\UE_4.25\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "UnrealProjectEditor (Development)",
+			"request": "launch",
+			"preLaunchTask": "UnrealProjectEditor Win64 Development Build",
+			"program": "D:\\EpicGames\\UE_4.25\\Engine\\Binaries\\Win64\\UE4Editor.exe",
+			"args": [
+				"D:\\Unreal\\Mario1-1\\UnrealProject\\UnrealProject.uproject"
+			],
+			"cwd": "D:\\EpicGames\\UE_4.25",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "D:\\EpicGames\\UE_4.25\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "Generate Project Files",
+			"type": "clr",
+			"request": "launch",
+			"program": "D:\\EpicGames\\UE_4.25\\Engine\\Binaries\\DotNET\\UnrealBuildTool.exe",
+			"console": "externalTerminal",
+			"args": [
+				"-projectfiles",
+				"-vscode",
+				"-project=\"D:\\Unreal\\Mario1-1\\UnrealProject\\UnrealProject.uproject\"",
+				"-game",
+				"-engine"
+			],
+			"internalConsoleOptions": "openOnSessionStart",
+			"cwd": "D:\\EpicGames\\UE_4.25"
+		}
+	]
+}
